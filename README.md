@@ -2,48 +2,48 @@
 
 ## Jar
 
-#### 1. Prepare jar
+#### 1. Print help
 
 ```
-./gradlew release
+java -jar project.jar --help
 ```
 
-#### 2. Print help
+#### 2. Normal mode
 
 ```
-java -jar anagram-0.1.jar --help
-```
-
-#### 3. Normal mode
-
-```
-java -jar anagram-0.1.jar example1.txt output.txt
+java -jar project.jar example1.txt output.txt
 ```
 
 `example1.txt` - source file
 `output.txt` - destination file
 
-#### 4. Interactive mode
+#### 3. Interactive mode
 
 ```
-java -jar anagram-0.1.jar -i
+java -jar project.jar -i
 ```
 
 ## Gradle
 
-#### 1. Loading dependencies and install gradle by wrapper
+#### 1. Load dependencies and install gradle by wrapper
 
 ```
 ./gradlew
 ```
 
-#### 1. Run app directly from Gradle
+#### 2. Prepare project.jar
+
+```
+./gradlew release
+```
+
+#### 3. Run app directly from Gradle
 
 ```
 ./gradlew runApp -PinputFile=example2.txt -PoutputFile=output.txt
 ```
 
-#### 2. Run unit tests
+#### 4. Run unit tests
 
 ```
 ./gradlew test
