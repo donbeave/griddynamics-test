@@ -36,6 +36,15 @@ public class Cli {
         return outputFile;
     }
 
+    public void printErrorMessage(String msg) {
+        if (interative) {
+            System.out.println("!!! " + msg + "\n");
+        } else {
+            System.err.println("ERROR: " + msg);
+            System.exit(1);
+        }
+    }
+
     private void parse(Options options, String[] args) {
         CommandLineParser parser = new DefaultParser();
 
@@ -161,15 +170,6 @@ public class Cli {
 
         if (input.equals("q") || input.equals("exit")) {
             exitNormally();
-        }
-    }
-
-    private void printErrorMessage(String msg) {
-        if (interative) {
-            System.out.println("!!! " + msg + "\n");
-        } else {
-            System.err.println("ERROR: " + msg);
-            System.exit(1);
         }
     }
 
