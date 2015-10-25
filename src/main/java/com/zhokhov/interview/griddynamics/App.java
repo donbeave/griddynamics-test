@@ -7,7 +7,7 @@ import java.io.IOException;
  */
 public class App {
 
-    private static final String CHARSET = "UTF-8";
+    protected static final String CHARSET = "UTF-8";
 
     public static void main(String[] args) {
         Cli cli = new Cli(args);
