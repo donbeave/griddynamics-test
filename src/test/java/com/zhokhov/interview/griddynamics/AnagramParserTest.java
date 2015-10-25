@@ -85,4 +85,9 @@ public class AnagramParserTest extends TestCase {
         writer.close();
     }
 
+    @Override
+    protected void tearDown() throws Exception {
+        folder.delete();
+    }
+
 }
