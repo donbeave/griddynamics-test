@@ -37,8 +37,14 @@ java -jar anagram-0.1.jar -i
 ./gradlew
 ```
 
-#### 2. Run app directly from Gradle
+#### 1. Run app directly from Gradle
 
 ```
-./gradlew runApp -PinputFile=example2.txt -PoutputFile=output.txt --info
+./gradlew runApp -PinputFile=example2.txt -PoutputFile=output.txt
+```
+
+#### 2. Run unit tests
+
+```
+./gradlew test
 ```
