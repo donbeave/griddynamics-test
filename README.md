@@ -8,10 +8,10 @@
 ./gradlew release
 ```
 
-#### 2. Help
+#### 2. Print help
 
 ```
-java -jar anagram-0.1.jar
+java -jar anagram-0.1.jar --help
 ```
 
 #### 3. Normal mode
