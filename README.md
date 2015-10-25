@@ -25,7 +25,7 @@ java -jar project.jar -i
 
 ## Gradle
 
-#### 1. Loading dependencies and install gradle by wrapper
+#### 1. Load dependencies and install gradle by wrapper
 
 ```
 ./gradlew
