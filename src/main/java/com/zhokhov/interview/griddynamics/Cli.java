@@ -124,7 +124,7 @@ public class Cli {
         File file = new File(path);
 
         if (input) {
-            if (!(file.exists() && file.canRead())) {
+            if (!(file.exists() || file.canRead())) {
                 printErrorMessage("File not found or can't read: " + path);
                 return null;
             }
