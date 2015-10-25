@@ -37,13 +37,13 @@ java -jar project.jar -i
 ./gradlew
 ```
 
-#### 1. Run app directly from Gradle
+#### 2. Run app directly from Gradle
 
 ```
 ./gradlew runApp -PinputFile=example2.txt -PoutputFile=output.txt
 ```
 
-#### 2. Run unit tests
+#### 3. Run unit tests
 
 ```
 ./gradlew test
