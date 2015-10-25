@@ -43,7 +43,7 @@ task releaseJar(type: Jar) {
 }
 
 task release(type: Copy, dependsOn: 'releaseJar') {
-    from 'build/libs/anagram-0.1.jar'
+    from "build/libs/anagram-${project.version}.jar"
     into './'
 }
 
