@@ -11,13 +11,13 @@
 #### 2. Print help
 
 ```
-java -jar anagram-0.1.jar --help
+java -jar project.jar --help
 ```
 
 #### 3. Normal mode
 
 ```
-java -jar anagram-0.1.jar example1.txt output.txt
+java -jar project.jar example1.txt output.txt
 ```
 
 `example1.txt` - source file
@@ -26,7 +26,7 @@ java -jar anagram-0.1.jar example1.txt output.txt
 #### 4. Interactive mode
 
 ```
-java -jar anagram-0.1.jar -i
+java -jar project.jar -i
 ```
 
 ## Gradle
