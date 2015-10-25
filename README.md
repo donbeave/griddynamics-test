@@ -2,19 +2,13 @@
 
 ## Jar
 
-#### 1. Prepare jar
-
-```
-./gradlew release
-```
-
-#### 2. Print help
+#### 1. Print help
 
 ```
 java -jar project.jar --help
 ```
 
-#### 3. Normal mode
+#### 2. Normal mode
 
 ```
 java -jar project.jar example1.txt output.txt
@@ -23,7 +17,7 @@ java -jar project.jar example1.txt output.txt
 `example1.txt` - source file
 `output.txt` - destination file
 
-#### 4. Interactive mode
+#### 3. Interactive mode
 
 ```
 java -jar project.jar -i
@@ -37,13 +31,19 @@ java -jar project.jar -i
 ./gradlew
 ```
 
-#### 2. Run app directly from Gradle
+#### 2. Prepare project.jar
+
+```
+./gradlew release
+```
+
+#### 3. Run app directly from Gradle
 
 ```
 ./gradlew runApp -PinputFile=example2.txt -PoutputFile=output.txt
 ```
 
-#### 3. Run unit tests
+#### 4. Run unit tests
 
 ```
 ./gradlew test
