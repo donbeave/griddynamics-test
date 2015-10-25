@@ -168,7 +168,7 @@ public class Cli {
         if (interative) {
             System.out.println("!!! " + msg + "\n");
         } else {
-            System.err.println(msg);
+            System.err.println("ERROR: " + msg);
             System.exit(1);
         }
     }
