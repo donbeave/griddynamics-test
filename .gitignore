@@ -83,6 +83,7 @@ gradle-app.setting
 
 
 ### Project
+/target/
 anagram-*.jar
 result*
 output*
